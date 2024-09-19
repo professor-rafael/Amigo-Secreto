@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inter&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
+  <title>Amigo Secreto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <img class="page__image" src="imagem-presente.png" alt="Imagem de um presente">
+    <div class="content">
+      <div class="content__corner-rectangle"></div>
+      <div class="content__main">
+        <section>
+          <h1 class="section__title">Amigo <span>Secreto</span></h1>
+          <form class="form">
+            <label class="form__label">
+              Digite o nome de um amigo
+            </label>
+            <input id="nome-amigo" class="form__input" type="text" placeholder="Nome do amigo">
+            <div class="form__buttons">
+              <button onclick="adicionar()" type="button" class="button primary">Adicionar</button>
+              <button onclick="sortear()" type="button" class="button secondary">Sortear</button>
+              <a onclick="reiniciar()" href="#" class="form__link">Reiniciar</a>
+            </div>
+          </form>
+        </section>
+        <section class="section--results">
+          <article>
+            <p class="friends__title">Amigos incluídos</p>
+            <div class="friends__container">
+              <p id="lista-amigos"></p>
+            </div>
+          </article>
+          <article>
+            <p class="prizeDraw__title">Sorteio</p>
+            <div class="prizeDraw__container">
+              <p id="lista-sorteio"></p>
+            </div>
+          </article>
+        </section>
+        <footer>@rasinformática</footer>
+      </div>
+    </div>
+  </main>
+  <div class="background__detail">
+    <script src="app.js"></script>
+</body>
+
+</html>
